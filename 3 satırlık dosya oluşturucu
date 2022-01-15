@@ -1,0 +1,24 @@
+from time import sleep
+dosya=input("oluşturmak istediğiniz dosyanın adını giriniz:")
+file=open(dosya+".txt","w",encoding="utf-8")
+a=input("metinde yazılmasını istediğiniz 1. satırı girin:")
+b=input("metinde yazılmasını istediğiniz 2. satırı girin:")
+c=input("metinde yazılmasını istediğiniz 3. satırı girin:")
+#w: Dosya oluşturma modu dosya zaten varsa owerwrite atar.
+#encoding: Türkçe yama notu.
+#Python File neredeyse oraya oluşturur .txt'yi.
+print("Dosya oluşturuluyor",end="")
+print(".",end="")
+sleep(1)
+print(".",end="")
+sleep(1)
+print(".")
+sleep(1)
+file.write(a)
+file.write("\n")
+file.write(b)
+file.write("\n")
+file.write(c)
+file.write("\n")
+file.close()
+print("Dosya oluşturuldu")
